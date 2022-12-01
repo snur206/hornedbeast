@@ -12,6 +12,7 @@ class HornedBeast extends React.Component {
 
     handleClick = () => {
         this.setState({ clicks: this.state.clicks + 1 });
+        this.props.handleOpenModal(this.props.title)
     };
 
     render() {
@@ -19,12 +20,12 @@ class HornedBeast extends React.Component {
             <>
             <Card >
                 <Card.Title>{this.props.name}</Card.Title>
-                <Card.Img src={this.props.imgUrl} onClick={this.handleClick} id={this.props.id} alt={this.props.description} />
-                <Card.Body>Number of Clicks: <img src={Heart} onClick={this.handleClick} alt='' height="50px" width="50px"/>{this.state.clicks}</Card.Body>
+                <Card.Img src={this.props.imgUrl} id={this.props.id} alt={this.props.description} onClick={()=>this.props.handleOpenModal(this.props.title)}/>
+                <Card.Body>Liked: <img src={Heart} onClick={this.handleClick} alt='' height="50px" width="50px"/>{this.state.clicks}</Card.Body>
                 <Card.Title>{this.props.title}</Card.Title>
                 <Card.Text>
-                    <div>{this.props.description}</div>
-                    <div>Number of Horns:{this.props.horns}</div>
+                    {this.props.description}
+                    Number of Horns:{this.props.horns}
                 </Card.Text>
                 {/* <button onClick={this.handleClick}> x: {this.state.favCount}</button> */}
             </Card>
