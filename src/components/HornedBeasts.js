@@ -21,7 +21,7 @@ class HornedBeast extends React.Component {
             <Card >
                 <Card.Title>{this.props.name}</Card.Title>
                 <Card.Img src={this.props.imgUrl} id={this.props.id} alt={this.props.description} onClick={()=>this.props.handleOpenModal(this.props.title)}/>
-                <Card.Body>Liked: <img src={Heart} onClick={this.handleClick} alt='' height="50px" width="50px"/>{this.state.clicks}</Card.Body>
+                <Card.Body>Like: <img src={Heart} onClick={this.handleClick} alt='' height="50px" width="50px"/>{this.state.clicks}</Card.Body>
                 <Card.Title>{this.props.title}</Card.Title>
                 <Card.Text>
                     {this.props.description}

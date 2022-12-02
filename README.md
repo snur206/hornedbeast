@@ -36,7 +36,7 @@ Finish time: 5:00
 
 Actual time needed to complete: 30 minutes
 
-## Lab 2
+## Lab 3
 
 Number and name of feature: Display a Modal
 
@@ -47,3 +47,15 @@ Start time: 2:50
 Finish time: 9:10
 
 Actual time needed to complete: 8 hour 20 minutes
+
+## Lab 
+
+Number and name of feature: Filter by Numbers of Horns
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 2:50
+
+Finish time: 5:20
+
+Actual time needed to complete: 2 hour 30 minutes

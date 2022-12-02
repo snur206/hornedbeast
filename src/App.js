@@ -6,6 +6,7 @@ import "./App.css"
 import data from "./data.json";
 import SelectedBeast from "./components/SelectedBeast"
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
