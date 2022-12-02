@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
 
 class SelectedBeast extends React.Component {
     render() {
@@ -12,7 +13,7 @@ class SelectedBeast extends React.Component {
                     </Modal.Header>
 
                     <Modal.Body >
-                        <img src={this.props.selectedBeast.image_url} alt={this.props.selectedBeast.alt} />
+                        <Image fluid src={this.props.selectedBeast.image_url} alt={this.props.selectedBeast.alt} />
                         {this.props.selectedBeast.description} Number of Horns{this.props.selectedBeast.horns}
                     </Modal.Body>
                     <Modal.Footer> <Button onClick={this.props.handleClosedModal}> Close</Button></Modal.Footer>
